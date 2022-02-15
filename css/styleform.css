@@ -1,6 +1,10 @@
-body {
- height: 200px;
- width: 100px;
- 
+* {
+    margin: 3px;
+    border-radius: 2px;
+}
 
- }
+label {
+    width: 80px;
+    display:inline-block;
+    text-align: right;
+}
