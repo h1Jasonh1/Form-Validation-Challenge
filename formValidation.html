@@ -20,7 +20,7 @@
         </div>
         <div>
             <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input pattern="[a-zA-Z]*" title="Please enter text only" type="text" id="name" name="name" required>
         </div>
         <div>
             <label for="address">Address:</label>
@@ -29,6 +29,7 @@
         <div>
             <label for="country">Country:</label>
                 <select name="countries" id="countries" required>
+                    <option aria-placeholder=""></option>
                     <option value="south_africa">South Africa</option>
                     <option value="namibia">Namibia</option>
                     <option value="botswana">Botswana</option>
@@ -40,7 +41,7 @@
         </div>
         <div>
             <label for="zip_code">ZIP Code:</label>
-                <input type="text" id="zip_code" size="4" required>
+                <input type="text" id="zip_code" size="4" title="Please enter numbers only" pattern="[0-9]*" required>
         </div>
         <div>
             <label for="email">Email:</label>
@@ -48,23 +49,23 @@
         </div>
         <div class="sex">
             <label for="sex">Sex:</label>
-                <input type="radio" id="male" name="sex" value="Male">
+                <input type="radio" id="male" name="sex" value="Male" required>
             <label for="male">Male</label>
-                <input type="radio" id="female" name="sex" value="Female">
+                <input type="radio" id="female" name="sex" value="Female" required>
             <label for="female">Female</label> 
         </div>
         <div>
             <label for="languages">Language:</label>
-                <input type="radio" id="english" name="languages" value="English">
+                <input type="checkbox" id="english" name="languages" value="English"required>
             <label for="english">English</label>
-                <input type="radio" id="non_english" name="languages" value="Non English">
+                <input type="checkbox" id="non_english" name="languages" value="Non English">
             <label for="non_english">Non English</label>
         </div>
         <div>
             <label for="about">About:</label>
                 <textarea for="about" name="about" rows="4" cols="30"></textarea>
         </div>
-        <div>
+        <div class="submit">
                 <input type="submit" value="Submit">
         </div>
         </div>
